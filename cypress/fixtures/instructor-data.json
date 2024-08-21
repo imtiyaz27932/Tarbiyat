@@ -1,0 +1,8 @@
+{
+    "FirstName": "Hey",
+    "LastName": "instructor",
+    "Email": "Learnerdemo@yopmail.com",
+    "Password": "string",
+    "invalidemail":"invalids@yopmail.com"
+
+}
