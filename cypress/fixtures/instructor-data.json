@@ -1,8 +1,8 @@
 {
     "FirstName": "Hey",
-    "LastName": "instructor",
+    "LastName": "Jommy",
     "Email": "Learnerdemo@yopmail.com",
     "Password": "string",
-    "invalidemail":"combopepssi@yopmail.com"
-
+    "invalidemail":"instructor@yopmail.com",
+    "wrongcred":"opmin@yopmail.com"
 }

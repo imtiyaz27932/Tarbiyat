@@ -15,7 +15,7 @@ describe("Instructor Sigin Test Suit", () => {
     instlog.signininst(repodata.Email, repodata.Password);
   });
   it("Unsuccessful Login using invalid Credentials", () => {
-    instlog.signininst(repodata.invalidemail, repodata.Password);
+    instlog.signininst(repodata.wrongcred, repodata.Password);
     instlog.getErrorMessage();
   });
 });

@@ -22,13 +22,13 @@ class instSignup{
 
       }
 
-      instsignup(name,lname,mail,pswed){
+      instsignup(name,lname,mails,pswed){
         this.Elements.createanAccount().click()
         this.Elements.clickinst().click()
         this.Elements.continuewithEmail().click()
         this.Elements.Firstname().type(name)
         this.Elements.Lastname().type(lname)
-        this.Elements.Emailaddress().type(mail)
+        this.Elements.Emailaddress().type(mails)
         this.Elements.Password().type(pswed)
         this.Elements.Signupbtn().click()
       }
