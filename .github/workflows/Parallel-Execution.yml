@@ -1,4 +1,4 @@
-name: Cypress Parallel Tests
+name: Cypress Parallel Test Execution on different Browsers
 
 on:
   push:
