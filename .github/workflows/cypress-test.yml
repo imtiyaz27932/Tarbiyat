@@ -1,4 +1,4 @@
-name: Smoke Testing 
+name: Smoke Testing Suit
 
 on:
   push:
