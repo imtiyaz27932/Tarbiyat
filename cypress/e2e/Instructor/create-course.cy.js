@@ -4,7 +4,7 @@ import UniqueCourseNameGenerator from "../../fixtures/uniquecoursename";
 
 describe("Instructor Sign-In Test Suite", () => {
   const instlog = new instLogin();
-  const create = new createCourse();
+  const course = new createCourse();
   let repodata;
   let courseData;
   const generator = new UniqueCourseNameGenerator();
@@ -30,7 +30,7 @@ describe("Instructor Sign-In Test Suite", () => {
     instlog.signininst(repodata.correctemail, repodata.Password);
 
     // Pass the course data to the create course method
-    create.createcourse(
+    course.createcourse(
       uniqueCourseName,
       courseData.language,
       courseData.description,
@@ -39,5 +39,7 @@ describe("Instructor Sign-In Test Suite", () => {
       courseData.skill,
       courseData.instructor
     );
+
+    course.addUnit()
   });
 });
