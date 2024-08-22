@@ -4,5 +4,7 @@
     "Email": "Learnerdemo@yopmail.com",
     "Password": "string",
     "invalidemail":"instructor@yopmail.com",
-    "wrongcred":"opmin@yopmail.com"
+    "wrongcred":"opmin@yopmail.com",
+    "correctemail": "instructor@yopmail.com"
+   
 }
