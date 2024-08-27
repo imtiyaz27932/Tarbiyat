@@ -16,6 +16,7 @@
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 import 'cypress-file-upload';
+import 'cypress-xpath';
 
 //
 // -- This is a dual command --

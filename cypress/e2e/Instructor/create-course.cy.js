@@ -7,6 +7,7 @@ describe("Instructor Sign-In Test Suite", () => {
   const course = new createCourse();
   let repodata;
   let courseData;
+  let lessonData;
   const generator = new UniqueCourseNameGenerator();
 
   beforeEach(() => {
@@ -19,6 +20,10 @@ describe("Instructor Sign-In Test Suite", () => {
     cy.fixture("course-data").then((testdata) => {
       courseData = testdata;
     });
+
+    cy.fixture("lessondata").then((testdata) => {
+        lessonData = testdata;
+      });
 
     // Visit the login page after loading fixtures
     instlog.visit();
@@ -41,5 +46,10 @@ describe("Instructor Sign-In Test Suite", () => {
     );
 
     course.addUnit()
+    course.Enterlessonitems(lessonData.LessonName, lessonData.LessonDes)
+    course.Assessment(lessonData.Name,lessonData.Des)
+    course.Addquiz()
+    course.Assignment()
+    course.Descriptive()
   });
 });
