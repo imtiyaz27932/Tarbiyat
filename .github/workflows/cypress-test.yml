@@ -1,4 +1,4 @@
-name: Smoke Testing Suit
+name: Smoke Testing Suite
 
 on:
   push:
@@ -26,3 +26,12 @@ jobs:
 
       - name: Run Cypress Tests
         run: npm run cy:run
+        
+      - name: Generate Report
+        run: npm run generate-report  # This assumes you have a script to generate a report
+
+      - name: Upload Cypress Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-results
+          path: cypress/reports
