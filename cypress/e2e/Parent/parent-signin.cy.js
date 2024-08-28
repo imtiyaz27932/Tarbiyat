@@ -1,23 +1,31 @@
-import signin from "../../Pageobjects/Parent/parentSigin";
+import Signin from "../../Pageobjects/Parent/parentSigin";
+
 const timestamp = Date.now();
 const uniqueEmail = `user${timestamp}@example.com`;
 const uniqueFirstName = generateUniqueName("Fname");
 const uniqueLastName = generateUniqueName("Lname");
 
 function generateUniqueName(baseName) {
-  const timestamp = Date.now();
-  return `${baseName}${timestamp}`;
+  return `${baseName}${Date.now()}`;
 }
 
-describe("Parent Sigin Test Suit", () => {
-  const log = new signin();
+describe("Parent Sign In Test Suite", () => {
+  const log = new Signin();
   let repodata;
+  let tdata;
 
   beforeEach(() => {
+    // Load fixture data
     cy.fixture("parent-data").then((testdata) => {
       repodata = testdata;
-      log.visit();
     });
+
+    cy.fixture("teachers").then((testdata) => {
+      tdata = testdata;
+    });
+
+    // Visit the login page
+    log.visit();
   });
 
   it("Parent Login Successfully", () => {
@@ -29,12 +37,12 @@ describe("Parent Sigin Test Suit", () => {
     log.getErrorMessage(); // Check for error message
   });
 
-  it("Parent logout Fucntionality", () => {
+  it("Parent logout Functionality", () => {
     log.Login(repodata.user.Email, repodata.user.Password);
     log.logout();
   });
 
-  it("Parent Adds child", () => {
+  it.only("Parent Adds Child", () => {
     log.Login(repodata.user.Email, repodata.user.Password); // Login before adding a child
     log.Addchild(
       uniqueFirstName,
@@ -43,5 +51,9 @@ describe("Parent Sigin Test Suit", () => {
       repodata.user.Password
     );
     log.getSuccessMessage();
+    log.Assignchild();
+    tdata.emailss.forEach(emails => {
+      log.AssignTeacher(emails);
+    });
   });
 });
