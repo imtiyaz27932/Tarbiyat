@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run",
-    "generate-report": "mkdir -p cypress/reports && npx mochawesome-merge cypress/results/*.json > cypress/reports/report.json && npx mochawesome-report-generator cypress/reports/report.json"
+    "create-report-dir": "mkdir -p cypress/reports",
+    "generate-report": "npx mochawesome-merge cypress/results/*.json > cypress/reports/report.json && npx mochawesome-report-generator cypress/reports/report.json"
   },
   "keywords": [],
   "author": "",
