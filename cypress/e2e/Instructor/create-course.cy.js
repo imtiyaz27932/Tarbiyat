@@ -24,7 +24,7 @@ describe("Instructor Sign-In Test Suite", () => {
     cy.fixture("lessondata").then((testdata) => {
         lessonData = testdata;
       });
-
+console.log("testing")
     // Visit the login page after loading fixtures
     instlog.visit();
   });
