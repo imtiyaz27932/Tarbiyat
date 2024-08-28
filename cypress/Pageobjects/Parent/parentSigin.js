@@ -73,6 +73,7 @@ class Signin {
     cy.wait(2000);
     this.Assignelements.clickdropdwns().contains("25").click();
     cy.wait(5000);
+    cy.get('button[aria-label="Go to next page"]').click();
     cy.scrollTo("bottom");
     cy.wait(2000);
     cy.scrollTo("top");
@@ -103,6 +104,7 @@ class Signin {
     this.teacherelements.typeemail().type(test);
     cy.contains("Link a Teacher").click();
     cy.wait(3000);
+
   }
 
   logout() {
