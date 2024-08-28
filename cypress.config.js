@@ -13,6 +13,15 @@ module.exports = defineConfig({
 
     setupNodeEvents(on, config) {
       // implement node event listeners here
+    },
+
+    // Mochawesome reporter configuration
+    reporter: "mochawesome",
+    reporterOptions: {
+      reportDir: "cypress/results",
+      overwrite: false,
+      html: false,
+      json: true
     }
   }
 });

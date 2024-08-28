@@ -26,13 +26,12 @@ jobs:
 
       - name: Run Cypress Tests
         run: npm run cy:run
-        
+
       - name: Create Report Directory
-        run: npm run create-report-dir
+        run: mkdir -p cypress/results cypress/reports
       
       - name: Generate Report
         run: npm run generate-report
-        # This assumes you have a script to generate a report
 
       - name: Upload Cypress Test Results
         uses: actions/upload-artifact@v3
