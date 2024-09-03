@@ -9,7 +9,7 @@ class childLogin {
 
   LoginElements = {
     clickchild: () => cy.contains("Learner"),
-    continuewithEmail: () => cy.get('button[tabindex="0"]').contains("Continue with email"),
+    continuewithEmail: () =>cy.get('button[tabindex="0"]').contains("Continue with email"),
     Emailaddress: () => cy.get('input[name="email"]'),
     Password: () => cy.get('input[name="password"]'),
     Signinbtn: () => cy.get('button[type="submit"]'),
@@ -23,13 +23,11 @@ class childLogin {
     this.LoginElements.Signinbtn().click();
   }
 
-  logout(){
-    cy.get('.MuiAvatar-root').click();
-    cy.contains('Logout').click()
-    cy.wait(2000)
-}
-
+  logout() {
+    cy.get(".MuiAvatar-root").click();
+    cy.contains("Logout").click();
+    cy.wait(2000);
   }
-
+}
 
 export default childLogin;

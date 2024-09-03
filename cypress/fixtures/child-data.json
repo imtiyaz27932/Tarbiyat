@@ -1,7 +1,7 @@
 {
     "FirstName": "Tom",
     "LastName": "Child",
-    "Email": "Learnerdemo@yopmail.com",
+    "Email": "child@yopmail.com",
     "Password": "string",
     "invalidemail":"invalid@yopmail.com"
 
