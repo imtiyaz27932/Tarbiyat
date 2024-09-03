@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-28T06:43:02.628Z",
+    "end": "2024-08-28T06:43:15.302Z",
+    "duration": 12674,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "040b36c4-f47f-4c48-8626-ead758457944",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Student\\Student-signup.cy.js",
+      "file": "cypress\\e2e\\Student\\Student-signup.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "823aac94-d17d-4dbd-84ca-ebe56528df18",
+          "title": "Learner Signin Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Child Successful Registration",
+              "fullTitle": "Learner Signin Test Suite Child Successful Registration",
+              "timedOut": null,
+              "duration": 5705,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Student\\\\Student-signup.cy.js\"\n}",
+              "code": "child.signupChild(repodata.FirstName, repodata.LastName, uniqueEmail, repodata.Password);",
+              "err": {},
+              "uuid": "c78aa7da-bb0d-4739-84c0-7d3413ac6108",
+              "parentUUID": "823aac94-d17d-4dbd-84ca-ebe56528df18",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Unsuccessfull Registeration using Existing Email id",
+              "fullTitle": "Learner Signin Test Suite Unsuccessfull Registeration using Existing Email id",
+              "timedOut": null,
+              "duration": 3932,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Student\\\\Student-signup.cy.js\"\n}",
+              "code": "child.signupChild(repodata.FirstName, repodata.LastName, repodata.Email, repodata.Password);\nchild.getErrorMessage();",
+              "err": {},
+              "uuid": "5d7f533b-e062-4494-a0aa-843b995cfcb5",
+              "parentUUID": "823aac94-d17d-4dbd-84ca-ebe56528df18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c78aa7da-bb0d-4739-84c0-7d3413ac6108",
+            "5d7f533b-e062-4494-a0aa-843b995cfcb5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9637,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

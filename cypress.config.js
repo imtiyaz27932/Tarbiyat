@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
   viewportWidth: 1920,
@@ -12,7 +13,12 @@ module.exports = defineConfig({
     screenshotsFolder: 'cypress/screenshots', // Directory for screenshots
 
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // Implement node event listeners here
+
+      // Allure writer setup
+      allureWriter(on, config);
+
+      return config;
     },
 
     // Mochawesome reporter configuration
@@ -20,7 +26,7 @@ module.exports = defineConfig({
     reporterOptions: {
       reportDir: "cypress/results",
       overwrite: false,
-      html: false,
+      html: true, // Set to true to generate an HTML report
       json: true
     }
   }

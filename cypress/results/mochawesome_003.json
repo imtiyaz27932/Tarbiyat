@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-28T06:41:05.539Z",
+    "end": "2024-08-28T06:42:22.084Z",
+    "duration": 76545,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "469840f5-578d-4e98-bcf2-c7e2bc29d286",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Parent\\parent-signin.cy.js",
+      "file": "cypress\\e2e\\Parent\\parent-signin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "14755af3-8291-47ac-a29b-1b389693ccd3",
+          "title": "Parent Sign In Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Parent Adds Child",
+              "fullTitle": "Parent Sign In Test Suite Parent Adds Child",
+              "timedOut": null,
+              "duration": 74235,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Parent\\\\parent-signin.cy.js\"\n}",
+              "code": "log.Login(repodata.user.Email, repodata.user.Password); // Login before adding a child\nlog.Addchild(uniqueFirstName, uniqueLastName, uniqueEmail, repodata.user.Password);\nlog.getSuccessMessage();\nlog.Assignchild();\ntdata.emailss.forEach(emails => {\n  log.AssignTeacher(emails);\n});",
+              "err": {},
+              "uuid": "85caf7e1-cf80-46ab-afca-d91773f0d668",
+              "parentUUID": "14755af3-8291-47ac-a29b-1b389693ccd3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85caf7e1-cf80-46ab-afca-d91773f0d668"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 74235,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

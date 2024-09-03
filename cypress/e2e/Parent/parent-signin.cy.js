@@ -42,7 +42,7 @@ describe("Parent Sign In Test Suite", () => {
     log.logout();
   });
 
-  it.only("Parent Adds Child", () => {
+  it("Parent Adds Child", () => {
     log.Login(repodata.user.Email, repodata.user.Password); // Login before adding a child
     log.Addchild(
       uniqueFirstName,

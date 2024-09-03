@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-28T06:42:25.693Z",
+    "end": "2024-08-28T06:42:34.680Z",
+    "duration": 8987,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d14d1403-980b-41de-b9a3-adc2e0c66c12",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Parent\\parent-signup.cy.js",
+      "file": "cypress\\e2e\\Parent\\parent-signup.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ea0f7f3-df57-451f-995c-f2ef43e4130b",
+          "title": "Parent Signup Test Suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Parent Registered successfully",
+              "fullTitle": "Parent Signup Test Suit Parent Registered successfully",
+              "timedOut": null,
+              "duration": 4403,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Parent\\\\parent-signup.cy.js\"\n}",
+              "code": "cy.fixture(\"parent-data\").then(data => {\n  sgn.SignupParent(data.user.Firstname, data.user.Lastname, uniqueEmail, data.user.Password);\n});",
+              "err": {},
+              "uuid": "ac481aef-2c0a-44c9-9950-bdafdab6c9c6",
+              "parentUUID": "4ea0f7f3-df57-451f-995c-f2ef43e4130b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Shows Error message if user is already registered",
+              "fullTitle": "Parent Signup Test Suit Shows Error message if user is already registered",
+              "timedOut": null,
+              "duration": 2197,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Parent\\\\parent-signup.cy.js\"\n}",
+              "code": "cy.fixture(\"parent-data\").then(data => {\n  sgn.SignupParent(data.user.Firstname, data.user.Lastname, data.user.Email, data.user.Password);\n});",
+              "err": {},
+              "uuid": "4fef2bca-3082-43dc-8637-d2af3ba0fa68",
+              "parentUUID": "4ea0f7f3-df57-451f-995c-f2ef43e4130b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac481aef-2c0a-44c9-9950-bdafdab6c9c6",
+            "4fef2bca-3082-43dc-8637-d2af3ba0fa68"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
