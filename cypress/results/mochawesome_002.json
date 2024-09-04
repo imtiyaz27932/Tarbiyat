@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-28T06:40:53.019Z",
+    "end": "2024-08-28T06:41:01.560Z",
+    "duration": 8541,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e6e074a0-24b9-4c05-b36f-3e819bec74fd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Instructor\\instructor-signup.cy.js",
+      "file": "cypress\\e2e\\Instructor\\instructor-signup.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "438a0ff7-983b-4e0d-9121-50dde27c0146",
+          "title": "Instructor Signup Test Suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Instructor Successfull Registeration",
+              "fullTitle": "Instructor Signup Test Suit Instructor Successfull Registeration",
+              "timedOut": null,
+              "duration": 3830,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Instructor\\\\instructor-signup.cy.js\"\n}",
+              "code": "inst.instsignup(repodata.FirstName, repodata.LastName, uniqueEmail, repodata.Password);",
+              "err": {},
+              "uuid": "77bb4d82-c9a1-49b7-9088-7ac5a331da38",
+              "parentUUID": "438a0ff7-983b-4e0d-9121-50dde27c0146",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Registeration Failed due to Exiting email Address",
+              "fullTitle": "Instructor Signup Test Suit Registeration Failed due to Exiting email Address",
+              "timedOut": null,
+              "duration": 2608,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Instructor\\\\instructor-signup.cy.js\"\n}",
+              "code": "inst.instsignup(repodata.FirstName, repodata.LastName, repodata.invalidemail, repodata.Password);\ninst.getErrorMessage();",
+              "err": {},
+              "uuid": "aa0cec28-be56-448e-ba61-1f5fa45d3354",
+              "parentUUID": "438a0ff7-983b-4e0d-9121-50dde27c0146",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "77bb4d82-c9a1-49b7-9088-7ac5a331da38",
+            "aa0cec28-be56-448e-ba61-1f5fa45d3354"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6438,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

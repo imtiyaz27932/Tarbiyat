@@ -1,0 +1,10 @@
+{
+  "user": {
+    "Firstname": "Hope",
+    "Lastname": "Dolly",
+    "Email": "Parent@gmail.com",
+    "Password": "string",
+    "invalidEmail": "wrongemail@yopmail.com",
+    "parentinst": "bari@yopmail.com"
+  }
+}

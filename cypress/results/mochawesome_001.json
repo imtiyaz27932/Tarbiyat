@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-28T06:40:41.523Z",
+    "end": "2024-08-28T06:40:49.260Z",
+    "duration": 7737,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f94438cc-b6ff-437a-a5bc-555cb6dafb93",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Instructor\\instructor-sigin.cy.js",
+      "file": "cypress\\e2e\\Instructor\\instructor-sigin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f3de0fff-2dd9-477a-91f8-32afb2d56e51",
+          "title": "Instructor Sigin Test Suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Instructor Login successfully",
+              "fullTitle": "Instructor Sigin Test Suit Instructor Login successfully",
+              "timedOut": null,
+              "duration": 3368,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Instructor\\\\instructor-sigin.cy.js\"\n}",
+              "code": "instlog.signininst(repodata.Email, repodata.Password);",
+              "err": {},
+              "uuid": "65af2830-e4d2-47dc-8977-70406571d926",
+              "parentUUID": "f3de0fff-2dd9-477a-91f8-32afb2d56e51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Unsuccessful Login using invalid Credentials",
+              "fullTitle": "Instructor Sigin Test Suit Unsuccessful Login using invalid Credentials",
+              "timedOut": null,
+              "duration": 1848,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Instructor\\\\instructor-sigin.cy.js\"\n}",
+              "code": "instlog.signininst(repodata.wrongcred, repodata.Password);\ninstlog.getErrorMessage();",
+              "err": {},
+              "uuid": "38d837f2-f38c-40b8-8f9b-c106f7dcbe1a",
+              "parentUUID": "f3de0fff-2dd9-477a-91f8-32afb2d56e51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "65af2830-e4d2-47dc-8977-70406571d926",
+            "38d837f2-f38c-40b8-8f9b-c106f7dcbe1a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5216,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "FirstName": "Tom",
+    "LastName": "Child",
+    "Email": "child@yopmail.com",
+    "Password": "string",
+    "invalidemail":"invalid@yopmail.com"
+
+}
